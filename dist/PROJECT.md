@@ -6,8 +6,6 @@ Food businesses rotate perishables by the date on the label. Two crates with the
 
 COP31 "Build for 2035" priority: **Zero Waste & Methane Reduction**.
 
-![Overview with the Climate lens and Rescue ladder](docs/screenshots/overview-climate-lens.png)
-
 ## Why it matters
 
 - Food loss and waste produces an estimated **8–10 % of global greenhouse-gas emissions**; households, food service and retail wasted about **1.05 billion tonnes** of food in 2022 ([UNEP Food Waste Index Report 2024](https://www.unep.org/resources/publication/food-waste-index-report-2024)).
@@ -24,8 +22,6 @@ COP31 "Build for 2035" priority: **Zero Waste & Methane Reduction**.
 | **Waste-risk scenarios** | Ordinary rotation, freshness-first, markdown and transfer are ranked by kg at risk before the next use, and the lowest is highlighted. |
 | **Guided demo** | A six-step in-app tour (▶ Guided demo) tells the story for judges in about two minutes. |
 
-![Expiry Twin with what-if storage temperature](docs/screenshots/expiry-twin-what-if.png)
-
 ## How it maps to the judging criteria
 
 | Criterion | Weight | Where to look |
@@ -34,8 +30,6 @@ COP31 "Build for 2035" priority: **Zero Waste & Methane Reduction**.
 | Build quality | 30 % | Dependency-free ES modules. Pure, tested domain core (`core.js`). 36 unit/UI tests plus a real-browser end-to-end journey. GitHub Actions CI. Schema-validated backups with migration. Formula-safe CSV. Escaped HTML. Stale-approval guards. Responsive down to 390 px. |
 | Creativity | 20 % | Freshness-aware planning that couples a temperature digital twin to demand, a what-if cold-chain slider, and hierarchy-ranked rescue actions in one workflow. |
 | Presentation | 20 % | Guided demo, a [two-minute pitch script](docs/DEMO.md), and screenshots. Every number on screen says whether it is modelled or recorded. |
-
-![Scenarios ranked by waste risk, with the guided demo](docs/screenshots/actions-scenarios-tour.png)
 
 ## Run locally
 
