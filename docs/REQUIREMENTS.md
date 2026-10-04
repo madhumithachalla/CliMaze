@@ -32,7 +32,15 @@ Temperature limits accepted by the input are -40 to 80 °C for technical validat
 
 ## Reporting
 
-Recorded sales/use, donations, transfers and discards are distinct. A transfer is not automatically a consumed meal or avoided waste. Evidence text is a user-supplied reference, not an independently verified file. No unique beneficiaries, methane or CO2e totals are inferred.
+Recorded sales/use, donations, transfers and discards are distinct. A transfer is not automatically a consumed meal or avoided waste. Evidence text is a user-supplied reference, not an independently verified file. No unique beneficiaries or verified methane reductions are inferred from records.
+
+## Climate lens (E09)
+
+- At risk of waste = usable stock left after the 24-hour scenario period in batches whose quality window ends before the next need-by time (24 h + need-by hours).
+- Modelled CO₂-e avoided = (at-risk kg under ordinary rotation − lowest at-risk kg among freshness-first, markdown and transfer) × landfill factor.
+- Default factor: 2.1 kg CO₂-e per kg food waste to landfill, from the Australian National Greenhouse Accounts Factors 2023. Editable under Actions; 0–20 accepted. Older v1 backups without the field migrate to the default.
+- Recorded discard is shown with its landfill-equivalent emissions so that recovery routing (compost / anaerobic digestion) is visible. Recorded sales, use and donation never receive an avoided-emissions credit.
+- The Rescue ladder recommends one action per at-risk batch using the food recovery hierarchy: Prevent (≥ 12 h left: use first or mark down), Feed people (donate when remaining hours ≥ collection lead + 4 h and a destination is set), Check (inspect), Recover (date limit reached or quality window ended: compost / anaerobic digestion, not landfill). It only prefills a proposal; staff review is unchanged.
 
 ## Persistence and exports
 

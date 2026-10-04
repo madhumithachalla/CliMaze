@@ -1,6 +1,6 @@
 # Epics and feature split
 
-All E01–E08 stories below are implemented in the local MVP. Ownership is a proposed work split for the team, not an accepted assignment. The code is organised into a shared domain module (`core.js`) and feature-specific rendering/form handlers in `app.js`.
+All E01–E09 stories below are implemented in the local MVP. Ownership is a proposed work split for the team, not an accepted assignment. The code is organised into a shared domain module (`core.js`) and feature-specific rendering/form handlers in `app.js`.
 
 | Epic | Proposed owners | User stories and acceptance | Implementation |
 |---|---|---|---|
@@ -11,6 +11,7 @@ All E01–E08 stories below are implemented in the local MVP. Ownership is a pro
 | E05 Intervention comparison | Abhishek + Madhumitha | E05.1 Compare ordinary receipt order with quality order. E05.2 Apply explicit markdown and uplift assumptions. E05.3 Bound transfer by capacity and collection horizon. E05.4 Show unsold/unallocated, transferred, held and revenue amounts separately. | actions, simulate, scenario-form |
 | E06 Review and decisions | Madhumitha + Vijayaraja | E06.1 Propose sell/use/transfer/donate/inspect/discard against a batch. E06.2 Require destination for transfer/donation. E06.3 Require reviewer name and check attestation. E06.4 Reject stale approvals; allow cancelling proposals. | propose, approve, approval-form, revision |
 | E07 Outcome ledger | Vijayaraja + Shyam | E07.1 Record one observed outcome against a current approved movement. E07.2 Require evidence text and bound quantity by approval and stock. E07.3 Close partial approvals and invalidate other approvals after a stock change. E07.4 Preserve decision and outcome history. | outcomes, recordOutcome, remaining |
+| E09 Climate lens and rescue ladder | Team to confirm | E09.1 Show kg at risk of waste per scenario and highlight the lowest. E09.2 Convert modelled prevented waste to CO₂-e with a cited, editable factor; keep recorded outcomes separate. E09.3 Recommend one next action per at-risk batch by the food recovery hierarchy and prefill a proposal. E09.4 Plot the batch freshness curve with a what-if storage temperature. E09.5 Guided six-step demo for judges. | impact, rescue, curve, quality(futureTemp), simulate.atRisk, climateLens, chart, twinLive, TOUR |
 | E08 Evidence and handover | Nithilan + Madhumitha | E08.1 Separate recorded activity from modelled scenarios. E08.2 Export formula-safe outcomes CSV. E08.3 Export/validate/restore full JSON. E08.4 Preserve audit history, idea credits and handover docs. E08.5 Guard reset with an explicit checkbox. | handover, validateState, csv, localStorage |
 
 ## Suggested execution split for the team
@@ -35,4 +36,4 @@ All E01–E08 stories below are implemented in the local MVP. Ownership is a pro
 
 ## Definition of done for this package
 
-The eight local epics work with synthetic or user-entered data, key domain invariants pass automated tests, code is dependency-free and documented, and the project can be served from `dist`. Browser visual QA is a remaining verification limitation in this environment; do not describe this as a production-tested application.
+The nine local epics work with synthetic or user-entered data, key domain invariants pass automated tests, code is dependency-free and documented, and the project can be served from `dist`. Browser visual QA is a remaining verification limitation in this environment; do not describe this as a production-tested application.

@@ -1,1 +1,1 @@
-{"name":"climaze-food-planner","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","start":"python3 -m http.server 8080 --directory dist"}}
+{"name":"climaze-food-planner","version":"1.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","start":"python3 -m http.server 8080 --directory dist","e2e":"node e2e/journey.mjs"}}

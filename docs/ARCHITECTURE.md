@@ -32,6 +32,15 @@ Model clock and audit timestamps are different by design. Date-only sales histor
 - Recipe requirement = output units × ingredient kg per unit ÷ (yield percent / 100).
 - Forecast baseline = total observations / number of distinct observed dates among seven complete days. Missing dates are not zeros.
 
+## Climate lens and rescue ladder
+
+- `quality(batch, asOf, futureTemp)`: remaining hours = min((life − effective age) ÷ 2^((futureTemp − ref)/10), date-limit hours). Omitting futureTemp keeps the reference-temperature assumption.
+- `curve(batch, asOf, futureTemp)`: recorded quality percentage at each reading boundary plus a straight projection to zero; drawn as inline SVG on the Expiry Twin.
+- `simulate(...).atRisk`: unsold usable stock in batches whose window ends before 24 h + need-by hours.
+- `impact(state)`: baseline vs best at-risk kg, modelled CO₂-e avoided, recorded donation/discard and discard landfill-equivalent.
+- `rescue(state)`: hierarchy-ranked next action per at-risk batch, sorted by remaining hours.
+- `settings.factor` (kg CO₂-e / kg) is validated 0–20 and defaulted for older backups.
+
 ## Scenario engine
 
 The scenario engine distributes today's demand across 24 hourly buckets, unlike the planner's single need-by event. Ordinary rotation uses receipt order; use-first uses quality order. Markdown multiplies demand by an explicit uplift assumption and reduces the unit price. Transfer allocates leftovers after the 24-hour period only if quality remains through 24 + collection/travel hours. Capacity limits the amount. Held quantities are separate; none of these scenarios writes inventory.
