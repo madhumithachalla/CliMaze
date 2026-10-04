@@ -31,6 +31,22 @@ COP31 "Build for 2035" priority: **Zero Waste & Methane Reduction**.
 | Creativity | 20 % | Freshness-aware planning that couples a temperature digital twin to demand, a what-if cold-chain slider, and hierarchy-ranked rescue actions in one workflow. |
 | Presentation | 20 % | Guided demo, a [two-minute pitch script](docs/DEMO.md), and screenshots. Every number on screen says whether it is modelled or recorded. |
 
+## Try it live
+
+**https://madhumithachalla.github.io/CliMaze/**
+
+Nothing to install. It works in any modern browser, on desktop or phone.
+
+1. Open the link and press **▶ Guided demo** (top right). Six steps walk you through the product in about two minutes.
+2. Or explore on your own:
+   - **Overview:** the Climate lens (waste at risk and CO₂-e) and the Rescue ladder (next best actions).
+   - **Expiry Twin:** pick ST-B and drag the "What if it is stored at…" slider.
+   - **Actions & approvals:** compare scenarios, then propose and approve an action.
+   - **Outcomes & evidence:** record what actually happened.
+3. All data is synthetic demo data stored only in your browser. To start over, go to **Project & backup → Model clock and demo reset**.
+
+The site redeploys automatically on every push to `main` (`.github/workflows/pages.yml`).
+
 ## Run locally
 
 Requirements: Python 3 for the static server and Node.js 20+ for tests. No npm install, API key or build step is needed.
