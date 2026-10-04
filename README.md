@@ -6,7 +6,7 @@ Food businesses rotate perishables by the date on the label. Two crates with the
 
 COP31 "Build for 2035" priority: **Zero Waste & Methane Reduction**.
 
-**Live demo: https://madhumithachalla.github.io/CliMaze/** (press ▶ Guided demo)
+**Live demo: https://madhumithachalla.github.io/climaze/** (press ▶ Guided demo)
 
 ![Overview with the Climate lens and Rescue ladder](docs/screenshots/overview-climate-lens.png)
 
@@ -41,7 +41,7 @@ COP31 "Build for 2035" priority: **Zero Waste & Methane Reduction**.
 
 ## Try it live
 
-**https://madhumithachalla.github.io/CliMaze/**
+**https://madhumithachalla.github.io/climaze/**
 
 Nothing to install. It works in any modern browser, on desktop or phone.
 
@@ -53,7 +53,7 @@ Nothing to install. It works in any modern browser, on desktop or phone.
    - **Outcomes & evidence:** record what actually happened.
 3. All data is synthetic demo data stored only in your browser. To start over, go to **Project & backup → Model clock and demo reset**.
 
-The site redeploys automatically on every push to `main` (`.github/workflows/pages.yml`).
+The live copy is served from the `climaze/` folder of the madhumithachalla.github.io repo. After changing `dist/`, copy it there to update the site.
 
 ## Run locally
 
